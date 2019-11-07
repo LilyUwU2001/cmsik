@@ -7,6 +7,7 @@ CMSik is a simple CMS system. It lets you manage your content using simple textf
 CMSik now has the following features:
 * CMSik can fetch your articles from a list stored in the articles.txt file ~~and see who's naughty or nice!~~ no it can't do the last part
 * CMSik can fetch article data, including title, text, and an infinite number of photos for the aspiring ones who want to make a photography blog.
+* CMSik can be translated and customized to your needs, providing you know the very basics of front-end development (HTML/CSS/JS)
 
 CMSik will have following features soon:
 * Simple commenting system.
