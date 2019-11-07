@@ -30,7 +30,7 @@
   $archive_name = "Archiwum";
   $page_name = "strona";
   $showmore_name = "Pokaż więcej";
-  $moreinarchive_name = "Więcej w archiwum."
+  $moreinarchive_name = "Więcej w archiwum.";
 
   $file_name = $_GET["name"];
   $file = fopen($file_name,"r");
