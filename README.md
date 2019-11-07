@@ -1,60 +1,36 @@
-# [Start Bootstrap - Bare](https://startbootstrap.com/template-overviews/bare/)
+# CMSik
 
-[Bare](http://startbootstrap.com/template-overviews/bare/) is a bare HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features predefined file paths for Bootstrap and jQuery, so you can quickly create Bootstrap websites.
-
-## Preview
-
-[![Bare Preview](https://startbootstrap.com/assets/img/templates/bare.jpg)](https://blackrockdigital.github.io/startbootstrap-bare/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-bare/)**
+CMSik is a simple CMS system. It lets you manage your content using simple textfiles, without using any kind of database - it works on every PHP server and is hack-proof because of its simple DB-less nature.
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-bare/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-bare.svg)](https://www.npmjs.com/package/startbootstrap-bare)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-bare.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-bare)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-bare/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-bare)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-bare/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-bare?type=dev)
+CMSik now has the following features:
+* CMSik can fetch your articles from a list stored in the articles.txt file ~~and see who's naughty or nice!~~ no it can't do the last part
+* CMSik can fetch article data, including title, text, and an infinite number of photos for the aspiring ones who want to make a photography blog.
+
+CMSik will have following features soon:
+* Simple commenting system.
+* Very simple one-user admin feature for moderating the commenting system.
+* Additional features that all alternative emo teens crave for their blogs.
+* A more serious README.md
 
 ## Download and Installation
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/bare/)
-* Install via npm: `npm i startbootstrap-bare`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-bare.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-bare)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
+To begin using CMSik, do this:
+* Grab CMSik files from this repo
+* Paste them into a folder of your choice
+* Start hacking on your new blog/site/whatever. Some assembly (not the programming language kind, fortunately) required. And by that, I mean some basic HTML/CSS/JS knowledge, you know, modifying the template, adding the elements you want. It's built on Bootstrap so if you know that, here's a cookie for you 🍪
+* Delete the template articles, write some masterpieces, save them as UTF-8 encoded textfiles and edit the list file (save it as ANSI encoded textfile).
+* Have fun with your site/blog/whatever
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-bare/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/bare/).
+Have a bug or an issue with this CMS? It should be bugless, if it's not then open an issue and I might take care of it someday when I'm not busy with other stuff. Unlike other people, that means it actually will be done and is not just an empty promise, though.
 
 ## About
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+CMSik is made by me and was made as a school project.
 
 ## Copyright and License
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-bare/blob/gh-pages/LICENSE) license.
+Made with love (❤) 2019 adrian09011. Code released under the MIT license.
