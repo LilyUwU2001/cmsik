@@ -24,7 +24,14 @@
 <body>
 
 <?php
+  // translate those into your language, customize those to your site
   $site_name = "CMSik";
+  $mainpage_name = "Główna";
+  $archive_name = "Archiwum";
+  $page_name = "strona";
+  $showmore_name = "Pokaż więcej";
+  $moreinarchive_name = "Więcej w archiwum.";
+
   $file_name = "articles.txt";
   $from = $_GET["from"];
   $to = $_GET["to"];
@@ -46,17 +53,17 @@
   echo "<!-- Navigation -->
   <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark\">
     <div class=\"container\">
-      <a class=\"navbar-brand\" href=\"index.php\">CMSik > Archiwum: strona $page</a>
+      <a class=\"navbar-brand\" href=\"index.php\">CMSik > $archive_name: $page_name $page</a>
       <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
       </button>
       <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
         <ul class=\"navbar-nav ml-auto\">
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"index.php\">Główna</a>
+            <a class=\"nav-link\" href=\"index.php\">$mainpage_name</a>
           </li>
           <li class=\"nav-item active\">
-            <a class=\"nav-link\" href=\"archive.php?from=6&to=10&page=1\">Archiwum
+            <a class=\"nav-link\" href=\"archive.php?from=6&to=10&page=1\">$archive_name
 				<span class=\"sr-only\">(current)</span>
 			</a>
           </li>";
@@ -70,14 +77,14 @@
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-lg-12 text-center\">
-        <h1 class=\"mt-5\">Archiwum: strona $page</h1>
+        <h1 class=\"mt-5\">$archive_name: $page_name $page</h1>
         <section id=\"screenshots\" class=\"screenshots-section\">
 		<div class=\"container screenshots\">";
 				
 				for($i=$from; $i<=$to; $i++){
 				echo "<br>
 						<div class=\"row\">
-						<div class=\"card top-buffer\" style=\"width: 60rem;\">
+						<div class=\"card top-buffer\" style=\"width: 100%;\">
 						<div class=\"row no-gutters\">
 							<div class=\"col-auto\">
 								<a href=\"view_article.php?name=$article_filename[$i]\">
@@ -88,7 +95,7 @@
 								<div class=\"card-block px-2\">
 									<h4 class=\"card-title\">$article_title[$i]</h4>
 									<p class=\"card-text\">$article_shorttext[$i]...</p>
-									<a href=\"view_article.php?name=$article_filename[$i]\" class=\"btn btn-primary\">Pokaż więcej</a>
+									<a href=\"view_article.php?name=$article_filename[$i]\" class=\"btn btn-primary\">$showmore_name</a>
 								</div>
 							</div>
 						</div>

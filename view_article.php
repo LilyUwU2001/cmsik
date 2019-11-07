@@ -24,7 +24,14 @@
 <body>
 
 <?php
+  // translate those into your language, customize those to your site
   $site_name = "CMSik";
+  $mainpage_name = "Główna";
+  $archive_name = "Archiwum";
+  $page_name = "strona";
+  $showmore_name = "Pokaż więcej";
+  $moreinarchive_name = "Więcej w archiwum."
+
   $file_name = $_GET["name"];
   $file = fopen($file_name,"r");
   $title = fgets($file);
@@ -49,10 +56,10 @@
       <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
         <ul class=\"navbar-nav ml-auto\">
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"index.php\">Główna</a>
+            <a class=\"nav-link\" href=\"index.php\">$mainpage_name</a>
           </li>
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"archive.php?from=6&to=10&page=1\">Archiwum</a>
+            <a class=\"nav-link\" href=\"archive.php?from=6&to=10&page=1\">$archive_name</a>
           </li>";
         echo"
         </ul>
