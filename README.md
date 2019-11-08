@@ -18,9 +18,9 @@ CMSik will have following features soon:
 #### See the status details on the projects page.
 ### New to "Projects" naming in this repo?
 
-Project EMO - features for blogs (not necessarily alternative emo teen ones)
-Project CASH - website creation/business features
-Project BUG - bugs to deal with (generated automatically from issues)
+* Project EMO - features for blogs (not necessarily alternative emo teen ones)
+* Project CASH - website creation/business features
+* Project BUG - bugs to deal with (generated automatically from issues)
 
 ## Download and Installation
 
