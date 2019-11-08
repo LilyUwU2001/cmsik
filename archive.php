@@ -31,6 +31,7 @@
   $page_name = "strona";
   $showmore_name = "Pokaż więcej";
   $moreinarchive_name = "Więcej w archiwum.";
+  $footer_name = "© ".date("Y")." CMSik.";
 
   $file_name = "articles.txt";
   $from = $_GET["from"];
@@ -122,12 +123,11 @@
   </div>
   <br>
   <br>
-  <br>";
+  <br>
+  <footer class=\"footer fixed-bottom navbar-expand-lg navbar-dark bg-dark text-center\">
+		<div class=\"navbar-brand text-center\">$footer_name</div>
+  </footer>";
 ?>
-
-  <footer class="footer fixed-bottom navbar-expand-lg navbar-dark bg-dark text-center">
-		<div class="navbar-brand text-center">© 2019 CMSik.</div>
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
