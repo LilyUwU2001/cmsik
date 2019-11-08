@@ -15,6 +15,13 @@ CMSik will have following features soon:
 * Additional features that all alternative emo teens crave for their blogs.
 * A more serious README.md
 
+#### See the status details on the projects page.
+### New to "Projects" naming in this repo?
+
+Project EMO - features for blogs (not necessarily alternative emo teen ones)
+Project CASH - website creation/business features
+Project BUG - bugs to deal with (generated automatically from issues)
+
 ## Download and Installation
 
 To begin using CMSik, do this:
