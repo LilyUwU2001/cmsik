@@ -32,11 +32,17 @@
   $showmore_name = "Pokaż więcej";
   $moreinarchive_name = "Więcej w archiwum.";
   $footer_name = "© ".date("Y")." CMSik.";
+  $comments_name = "Komentarze";
+  $nocomments_name = "Brak komentarzy.";
+  $sent_name = "Wysłano";
 
   $file_name = $_GET["name"];
   $file = fopen($file_name,"r");
   $title = fgets($file);
   $text = fgets($file);
+  $comments_on = fgets($file);
+  $path_parts = pathinfo($file_name);
+  $comments_path = $path_parts['dirname']."/".$path_parts['filename']."_comments.txt";
   $input = "read";
   $photo_number = 0;
   while (strlen($input) > 0) {
@@ -45,6 +51,28 @@
 	$photo[$photo_number] = $input;
   }
   fclose($file);
+  
+  if ($comments_on == 1) {
+	$comment_number = 0;
+	if (file_exists($comments_path)) {
+	$comments = fopen($comments_path,"r");
+	$input = "read";
+    $comment_number = 0;
+    while (strlen($input) > 0) {
+	  $comment_number++;
+	  $input = fgets($comments);
+	  $comment_nick[$comment_number] = $input;
+	  $input = fgets($comments);
+	  $comment_date[$comment_number] = $input;
+      $input = fgets($comments);
+	  $comment_text[$comment_number] = $input;
+    }
+	fclose($comments);
+	}
+	else {
+	  $comments_name = $nocomments_name;
+	}
+  }
   
   echo "<!-- Navigation -->
   <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark\">
@@ -91,7 +119,25 @@
 				}
 			echo "</div>
 		</div> 
-	</section>
+	</section>";
+	
+	if ($comments_on == 1) {
+		echo "<div class=\"container\">
+				<div class=\"row\">
+					<div class=\"col-lg-12 text-center\">
+						<h1 class=\"mt-5\">$comments_name</h1>";
+							for($i=1; $i<$comment_number; $i++){
+								echo "<h3 class=\"mt-5\">$comment_nick[$i]</h1>";
+								echo "<p class=\"text-muted mt-5\">$sent_name $comment_date[$i]</h5>";
+								echo "<p style=\"text-align:justify\">$comment_text[$i]</p>";
+							}
+					echo"
+					</div>
+				</div>
+			</div>";
+	}
+	
+	echo"
 	<br>
     <br>
     <br>
@@ -100,8 +146,8 @@
     </footer>";
 ?>
   
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 

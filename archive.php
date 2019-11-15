@@ -32,6 +32,9 @@
   $showmore_name = "Pokaż więcej";
   $moreinarchive_name = "Więcej w archiwum.";
   $footer_name = "© ".date("Y")." CMSik.";
+  $comments_name = "Komentarze";
+  $nocomments_name = "Brak komentarzy.";
+  $sent_name = "Wysłano";
 
   $file_name = "articles.txt";
   $from = $_GET["from"];
