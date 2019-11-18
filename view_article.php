@@ -35,6 +35,14 @@
   $comments_name = "Komentarze";
   $nocomments_name = "Brak komentarzy.";
   $sent_name = "Wysłano";
+  $docomment_name = "Skomentuj";
+  $nick_name = "Nick";
+  $content_name = "Treść";
+  $send_name = "Wyślij";
+  $thankyou_name = "Dziękujemy.";
+  $commentsubmitted_name = "Komentarz został wysłany.";
+
+  $newcomment_date = date("r");
 
   $file_name = $_GET["name"];
   $file = fopen($file_name,"r");
@@ -134,7 +142,39 @@
 					echo"
 					</div>
 				</div>
-			</div>";
+			</div>
+			<div class=\"container\">
+    <div class=\"row\">
+      <div class=\"col-lg-12 col-xl-10 mx-auto\">
+        <div class=\"card card-signin flex-row my-4\">
+          <div class=\"card-img-left d-none d-md-flex\">
+             <!-- Background image for card set in CSS! -->
+          </div>
+          <div class=\"card-body\">
+            <h5 class=\"text-dark card-title text-center\">$docomment_name</h5>
+            <form action=\"submit_comment.php\" method=\"post\" class=\"form-signin\">
+
+			  <input type=\"hidden\" id=\"textID\" name=\"textID\" value=\"$file_name\">
+			  <input type=\"hidden\" id=\"commentDate\" name=\"commentDate\" value=\"$newcomment_date\">
+              <div class=\"form-label-group\">
+                <label class=\"text-dark\" for=\"inputUsername\">$nick_name</label>
+                <input type=\"text\" name=\"inputUsername\" id=\"inputUsername\" class=\"form-control\" placeholder=\"$nick_name\" required>
+              </div>
+
+              <div class=\"form-label-group\">
+                <label class=\"text-dark\" for=\"inputContent\">$content_name</label>
+                <textarea rows=\"10\" name=\"inputContent\" id=\"inputContent\" class=\"form-control\" required></textarea>
+			  </div>
+
+              <br>
+
+              <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">$send_name</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>";
 	}
 	
 	echo"

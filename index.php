@@ -35,6 +35,12 @@
   $comments_name = "Komentarze";
   $nocomments_name = "Brak komentarzy.";
   $sent_name = "Wysłano";
+  $docomment_name = "Skomentuj";
+  $nick_name = "Nick";
+  $content_name = "Treść";
+  $send_name = "Wyślij";
+  $thankyou_name = "Dziękujemy.";
+  $commentsubmitted_name = "Komentarz został wysłany.";
 
   $file_name = "articles.txt";
   $file = fopen($file_name,"r");
