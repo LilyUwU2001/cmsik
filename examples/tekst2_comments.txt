@@ -1,0 +1,6 @@
+adrian09_01
+Tue, 19 Nov 2019 08:10:38 +0100
+Testujemy komentarze w CMSiku<br>Jaki piękny dziś dzień
+TestUser2
+Tue, 19 Nov 2019 08:10:53 +0100
+Drugi komentarz testowy

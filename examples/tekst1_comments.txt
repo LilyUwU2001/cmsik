@@ -4,3 +4,6 @@ Testujemy komentarze w CMSiku<br/>Komentarzy linia druga
 TestUser2
 Mon, 18 Nov 2019 14:04:29 +0100
 Drugi test komentarza<br/>Taki piękny dziś dzień
+TestUser3
+Tue, 19 Nov 2019 08:08:52 +0100
+Trzeci test komentarza<br>Testujemy komentarze dalej
