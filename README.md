@@ -44,7 +44,7 @@ examples/images/zdjecie1-2.jpg
 ```
 
 * First line - article title
-* Second line - article content. Separate newlines with <br>
+* Second line - article content. Separate newlines with ```<br>```
 * Third line - 0 to disable comments, 1 to enable comments.
 * Next lines till the end - photos, you can add an infinite number of photos to your article.
 
