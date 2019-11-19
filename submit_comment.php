@@ -51,15 +51,23 @@
   $file_name = $path_parts['dirname']."/".$path_parts['filename']."_comments.txt";
   $comment_date = $_POST["commentDate"];
   $input_username = $_POST["inputUsername"];
-  $input_content = sanitize_paranoid_string($_POST["inputContent"]);
-  $input_content = str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$input_content);
+  $input_content = sanitize_html_string($_POST["inputContent"]);
   
+  if (file_exists($file_name)) {
   $current = file_get_contents($file_name);
   $current .= "\r\n";
   $current .= "$input_username\r\n";
   $current .= "$comment_date\r\n";
-  $current .= "$input_content\r\n";
+  $current .= "$input_content";
   file_put_contents($file_name, $current);
+  }
+  else {
+  $current = "";
+  $current .= "$input_username\r\n";
+  $current .= "$comment_date\r\n";
+  $current .= "$input_content";
+  file_put_contents($file_name, $current);  
+  }
 
   echo "<!-- Navigation -->
   <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark\">
