@@ -54,6 +54,7 @@
 	$article = fopen(trim($article_filename[$i]),"r");
 	$article_title[$i] =  fgets($article);
     $article_text[$i] = fgets($article);
+	$article_comments_on = fgets($article);
     $article_photo[$i] = fgets($article);
 	$article_shorttext[$i] = substr($article_text[$i], 0, 100);
 	fclose($article);
