@@ -54,8 +54,8 @@ Have a bug or an issue with this CMS? It should be bugless, if it's not then ope
 
 ## About
 
-CMSik is made by me and was made as a school project.
+CMSik is made by me and was made as a school project. It is constant  
 
 ## Copyright and License
 
-Made with love (❤) 2019 adrian09011. Code released under the MIT license.
+Made with love (❤) 2019-2023 LilyUwU2001  ` 1. Code released under the MIT license.
